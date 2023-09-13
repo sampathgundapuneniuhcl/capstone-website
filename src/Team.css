@@ -1,0 +1,22 @@
+    .container {
+        padding-top:5%;
+    }
+   
+    .image {
+     float:left;
+     /* width:20%; */
+     height:10%;
+   }
+   
+   .text {
+     float: left;
+     padding :5px;
+   }
+
+   .imageDiv {
+        width: 25%;
+        height: 25%;
+   }
+   .personDetails {
+        font-size: 300;
+   }

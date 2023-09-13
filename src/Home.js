@@ -8,16 +8,20 @@ import { Team } from './Team';
 import { Meetings } from './Meeting';
 import { MileStones } from './MileStone';
 import { Videos } from './Videos';
+import Logo from './assets/Logo.jpg';
+import { Avatar } from '@mui/material';
 
 function Home() {
     const [value, setValue] = React.useState(0);
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+      console.log(newValue);
       setValue(newValue);
     };
     let content_array = [<HomeTab />, <Mentors />, <Team />, <Meetings />, <MileStones />, <Videos />];
     return (
         <div>
-        <Box sx={{ width: '100%' }}>
+        <Avatar alt="Remy Sharp" src={`${Logo}`}  sx={{width: 50, height: 60, marginLeft: '3%', marginTop: '1%', position: 'absolute'}}/>
+        <Box sx={{ width: '100%', marginLeft:'50%', height: '60px' }}>
           <Tabs
             onChange={handleChange}
             value={value}
