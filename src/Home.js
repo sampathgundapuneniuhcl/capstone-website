@@ -21,7 +21,7 @@ function Home() {
     return (
         <div>
         <Avatar alt="Remy Sharp" src={`${Logo}`}  sx={{width: 50, height: 60, marginLeft: '3%', marginTop: '1%', position: 'absolute'}}/>
-        <Box sx={{ width: '100%', marginLeft:'50%', height: '60px' }}>
+        <Box sx={{ marginLeft:'50%', height: '60px' }}>
           <Tabs
             onChange={handleChange}
             value={value}

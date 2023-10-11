@@ -1,34 +1,34 @@
 import * as React from 'react';
 import './Team.css';
-// import Team1 from "./assets/mentor.jpg";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import { Avatar } from '@mui/material';
-import { borderColor } from '@mui/system';
+
+const fizalImg = 'https://i.postimg.cc/W1DbrNvM/fs.jpg';
+const sampathImg = 'https://i.postimg.cc/8ztX86nS/sampath.jpg';
+const raginiImg = 'https://i.postimg.cc/MHSmf6r5/ragini.jpg';
+const mohanImg = 'https://i.postimg.cc/nr95Rzky/mohan.jpg';
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+    img: sampathImg,
     title: 'Sampath',
-    author1: 'Abc',
-    author2: 'sdsfs',
-    author3: 'dskfs',
+    author1: 'Software Engineer',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: raginiImg,
     title: 'Ragini',
-    author: '',
+    author1: 'Software Developer',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Faisal',
-    author: '',
+    img: fizalImg,
+    title: 'Faisal Alnounou',
+    author1: 'Software Engineer / Highschool Teacher',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    img: mohanImg,
     title: 'Mohan',
-    author: '',
+    author1: 'Software Developer',
   },
 ]
 
@@ -36,7 +36,7 @@ function Team() {
     return (
       <div>
         <div className='container'>
-        <ImageList sx={{ width: '90%', height: 300, paddingLeft: '4%', paddingRight: '4%' }} cols={4}>
+        <ImageList sx={{ width: '90%', height: 500, paddingLeft: '4%', paddingRight: '4%' }} cols={4}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
             <img

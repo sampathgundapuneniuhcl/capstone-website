@@ -1,13 +1,13 @@
 import * as React from 'react';
 import './HomeTab.css';
-import Logo from "./assets/Logo.jpg";
 function HomeTab() {
 
+  const logoImg = 'https://i.postimg.cc/4yrpg8vM/Logo.jpg';
     return (
         <div>
             <div className="container"> 
               <div className="image">
-                 <img src={Logo}  alt="logo"></img>
+                 <img src={logoImg}  alt="logo"></img>
               </div>
               <div className="text">
                  <h1> Humanoid ChatBot</h1> 
